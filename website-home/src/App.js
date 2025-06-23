@@ -10,6 +10,8 @@ function App() {
       <MenuBar/>
       <AppLayout
         headerSelector="#menu-bar"
+        navigationHide
+        toolsHide
       >
       </AppLayout>
     </div>
