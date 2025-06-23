@@ -15,6 +15,20 @@ const MenuBar = () => {
             alt: "JKC"
           }
         }}
+        utilities={[
+          {
+            type: "button",
+            iconUrl: "/linkedin-icon.svg",
+            target: "_blank",
+            href: "https://www.linkedin.com/in/joy-c-b25896276/",
+          },
+          {
+            type: "button",
+            iconUrl: "/instagram-icon.svg",
+            target: "_blank",
+            href: "https://www.instagram.com/jkchopra126/",
+          },
+        ]}
       >
 
       </TopNavigation>
