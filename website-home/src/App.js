@@ -1,6 +1,7 @@
 import './App.css';
 import {
   AppLayout,
+  SideNavigation,
 } from '@cloudscape-design/components';
 import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
@@ -11,10 +12,44 @@ function App() {
       <MenuBar/>
       <AppLayout
         headerSelector="#menu-bar"
-        navigationHide
         toolsHide
         content={
           <Content/>
+        }
+        navigation={
+          <SideNavigation
+            header={{
+              href: '/',
+              text: 'Topics',
+            }}
+            items={[
+              { 
+                type: 'link',
+                text: `Trees`, 
+                href: `/trees` 
+              },
+              {
+                type: 'link',
+                text: 'Mathematics',
+                href: '/maths'
+              },
+              {
+                type: 'link',
+                text: 'Literature',
+                href: '/literature'
+              },
+              {
+                type: 'link',
+                text: 'Computers',
+                href: '/computers'
+              },
+              {
+                type: 'link',
+                text: 'Electronics',
+                href: '/electronics'
+              }
+            ]}
+          />
         }
       >
       </AppLayout>

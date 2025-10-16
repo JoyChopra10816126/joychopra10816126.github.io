@@ -7,7 +7,7 @@ const MenuBar = () => {
     <div id="menu-bar">
       <TopNavigation
         identity={{
-          href: "#",
+          href: "/",
           title: "Joy K Chopra",
           logo: {
             src: "/jkc.png",
