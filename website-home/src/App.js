@@ -31,7 +31,7 @@ function App() {
               {
                 type: 'link',
                 text: 'Mathematics',
-                href: '/maths'
+                href: '/mathematics'
               },
               {
                 type: 'link',
