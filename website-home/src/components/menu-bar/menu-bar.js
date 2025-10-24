@@ -8,10 +8,10 @@ const MenuBar = () => {
       <TopNavigation
         identity={{
           href: "/",
-          title: "Joy K Chopra",
+          title: "Tech made simple",
           logo: {
-            src: "/jkc.png",
-            alt: "JKC"
+            src: "/tms.png",
+            alt: "TMS"
           }
         }}
       />
