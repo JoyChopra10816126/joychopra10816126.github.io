@@ -23,20 +23,10 @@ function App() {
               text: 'Topics',
             }}
             items={[
-              { 
-                type: 'link',
-                text: `Trees`, 
-                href: `/trees` 
-              },
               {
                 type: 'link',
                 text: 'Mathematics',
                 href: '/mathematics'
-              },
-              {
-                type: 'link',
-                text: 'Literature',
-                href: '/literature'
               },
               {
                 type: 'link',
