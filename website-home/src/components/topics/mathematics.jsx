@@ -2,7 +2,7 @@ import { Cards, Link } from "@cloudscape-design/components";
 
 const Mathematics = () => {
   return (
-    <div class="content">
+    <div className="content">
       <Cards
         cardDefinition={{
           header: item => (

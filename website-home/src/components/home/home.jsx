@@ -1,12 +1,13 @@
-import { Cards, Link } from "@cloudscape-design/components";
+import { Cards } from "@cloudscape-design/components";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div class="content">
+    <div className="content">
       <Cards
         cardDefinition={{
           header: item => (
-            <Link href={item.url} fontSize="heading-m">
+            <Link to={item.url} fontSize="heading-m">
               {item.name}
             </Link>
           ),
