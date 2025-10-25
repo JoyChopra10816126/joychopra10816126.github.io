@@ -15,7 +15,9 @@ function App() {
         headerSelector="#menu-bar"
         toolsHide
         content={
+      <HashRouter>
           <Content />
+          </HashRouter>
         }
         navigation={
           <HashRouter>
