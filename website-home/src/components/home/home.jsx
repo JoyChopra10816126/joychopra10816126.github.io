@@ -1,9 +1,8 @@
 import { Cards, Link } from "@cloudscape-design/components";
-import * as React from "react";
 
-const Content = () => {
+const Home = () => {
   return (
-    <div id="my-content">
+    <div class="content">
       <Cards
         cardDefinition={{
           header: item => (
@@ -45,4 +44,4 @@ const Content = () => {
   )
 }
 
-export default Content;
+export default Home;
