@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "../home/home";
 import Mathematics from "../topics/mathematics";
 
 const Content = () => {
   return (
     <div id="my-content">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route>
             <Route path="/" element={<Home />} />
@@ -14,7 +14,7 @@ const Content = () => {
             {/* <Route path="/" element={<Computers />} /> */}
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
