@@ -4,14 +4,14 @@ import { useMode } from "./mode-context";
 const ModeSelector = () => {
   const { learningMode, setLearningMode } = useMode()
 
-  const statusDescription = learningMode ? "Formal" : "Beginner";
+  const statusDescription = learningMode ?  "Beginner" : "Formal";
 
   return (
     <SpaceBetween direction="vertical" size="xxs">
       <SpaceBetween direction="horizontal" size="xxs">
         <img
-          src="/beginner-mode.png"
-          alt="B"
+          src="/formal-mode.png"
+          alt="F"
           width={24}
           height={24}
         />
@@ -23,8 +23,8 @@ const ModeSelector = () => {
         />
 
         <img
-          src="/formal-mode.png"
-          alt="F"
+          src="/beginner-mode.png"
+          alt="b"
           width={24}
           height={24}
         />
