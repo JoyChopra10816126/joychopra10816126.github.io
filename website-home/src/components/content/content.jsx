@@ -5,6 +5,7 @@ import {
 import Home from "../home/home";
 import Mathematics from "../topics/mathematics";
 import NavigationPath from "../navigation-path/navigation-path";
+import Computers from "../topics/computers";
 
 const Content = () => {
   return (
@@ -12,9 +13,9 @@ const Content = () => {
       <NavigationPath/>
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/mathematics" element={<Mathematics/>} />
+            <Route path="/computers" element={<Computers />} />
             {/* <Route path="/" element={<Electronics />} /> */}
-            {/* <Route path="/" element={<Computers />} /> */}
+            <Route path="/mathematics" element={<Mathematics/>} />
         </Routes>
     </div>
   )

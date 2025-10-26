@@ -24,11 +24,6 @@ const Home = () => {
         ]}
         items={[
           {
-            name: "Mathematics",
-            description: "Study of number, logic and patterns",
-            url: '/mathematics'
-          },
-          {
             name: "Computers",
             description: "Study of computation and automation",
             url: '/computers'
@@ -37,6 +32,11 @@ const Home = () => {
             name: "Electronics",
             description: "Study of circuits and devices",
             url: '/electronics'
+          },
+          {
+            name: "Mathematics",
+            description: "Study of number, logic and patterns",
+            url: '/mathematics'
           },
         ]}
       />
