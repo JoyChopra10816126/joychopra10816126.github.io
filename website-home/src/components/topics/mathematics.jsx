@@ -25,7 +25,7 @@ const Mathematics = () => {
         items={[
           {
             name: "Algebra",
-            description: "Symbols and equations for relations",
+            description: "Study of symbols and equations",
             url: '/mathematics/algebra'
           },
           {
