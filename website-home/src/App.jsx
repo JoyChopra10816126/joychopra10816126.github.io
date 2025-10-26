@@ -6,48 +6,51 @@ import {
 import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
 import { HashRouter } from 'react-router-dom';
+import { ModeProvider } from './components/mode-selector/mode-context';
 
 function App() {
   return (
     <div id="App">
       <MenuBar />
-      <AppLayout
-        headerSelector="#menu-bar"
-        toolsHide
-        content={
-      <HashRouter>
-          <Content />
-          </HashRouter>
-        }
-        navigation={
-          <HashRouter>
-            <SideNavigation
-              header={{
-                href: '/',
-                text: 'Topics',
-              }}
-              items={[
-                {
-                  type: 'link',
-                  text: 'Computers',
-                  href: '#/computers'
-                },
-                {
-                  type: 'link',
-                  text: 'Electronics',
-                  href: '#/electronics'
-                },
-                {
-                  type: 'link',
-                  text: 'Mathematics',
-                  href: '#/mathematics'
-                },
-              ]}
-            />
-          </HashRouter>
-        }
-      >
-      </AppLayout>
+      <ModeProvider>
+        <AppLayout
+          headerSelector="#menu-bar"
+          toolsHide
+          content={
+            <HashRouter>
+              <Content />
+            </HashRouter>
+          }
+          navigation={
+            <HashRouter>
+              <SideNavigation
+                header={{
+                  href: '/',
+                  text: 'Topics',
+                }}
+                items={[
+                  {
+                    type: 'link',
+                    text: 'Computers',
+                    href: '#/computers'
+                  },
+                  {
+                    type: 'link',
+                    text: 'Electronics',
+                    href: '#/electronics'
+                  },
+                  {
+                    type: 'link',
+                    text: 'Mathematics',
+                    href: '#/mathematics'
+                  },
+                ]}
+              />
+            </HashRouter>
+          }
+        >
+        </AppLayout>
+      </ModeProvider>
     </div>
   );
 }
