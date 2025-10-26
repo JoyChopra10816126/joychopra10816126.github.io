@@ -29,11 +29,6 @@ function App() {
               items={[
                 {
                   type: 'link',
-                  text: 'Mathematics',
-                  href: '#/mathematics'
-                },
-                {
-                  type: 'link',
                   text: 'Computers',
                   href: '#/computers'
                 },
@@ -41,7 +36,12 @@ function App() {
                   type: 'link',
                   text: 'Electronics',
                   href: '#/electronics'
-                }
+                },
+                {
+                  type: 'link',
+                  text: 'Mathematics',
+                  href: '#/mathematics'
+                },
               ]}
             />
           </HashRouter>

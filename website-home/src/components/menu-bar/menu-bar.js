@@ -8,7 +8,11 @@ const MenuBar = () => {
       <TopNavigation
         identity={{
           href: "/",
-          title: "Technology made simple",
+          title: (
+            <p>Technology Made&nbsp;
+              <span style={{"color": "orange"}}>S</span>imple
+            </p>
+          ),
           logo: {
             src: "/tms.png",
             alt: "TMS"
