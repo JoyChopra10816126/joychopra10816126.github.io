@@ -7,17 +7,20 @@ import Mathematics from "../topics/mathematics";
 import NavigationPath from "../navigation-path/navigation-path";
 import Computers from "../topics/computers";
 import Electronics from "../topics/electronics";
+import { SpaceBetween } from "@cloudscape-design/components";
 
 const Content = () => {
   return (
     <div className="content">
-      <NavigationPath/>
+      <SpaceBetween direction="vertical" size="s">
+        <NavigationPath/>
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/computers" element={<Computers />} />
             <Route path="/electronics" element={<Electronics />} />
             <Route path="/mathematics" element={<Mathematics/>} />
         </Routes>
+        </SpaceBetween>
     </div>
   )
 }
