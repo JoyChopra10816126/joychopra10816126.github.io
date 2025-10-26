@@ -30,13 +30,12 @@ const Home = () => {
           },
           {
             name: "Computers",
-            description: "Smart machines for the modern life",
+            description: "Study of computation and automation",
             url: '/computers'
-
           },
           {
             name: "Electronics",
-            description: "Science of hardware",
+            description: "Study of circuits and devices",
             url: '/electronics'
           },
         ]}
