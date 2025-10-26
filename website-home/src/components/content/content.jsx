@@ -8,6 +8,7 @@ import NavigationPath from "../navigation-path/navigation-path";
 import Computers from "../topics/computers";
 import Electronics from "../topics/electronics";
 import { SpaceBetween } from "@cloudscape-design/components";
+import NotFound from "../not-found/not-found";
 
 const Content = () => {
   return (
@@ -19,6 +20,7 @@ const Content = () => {
             <Route path="/computers" element={<Computers />} />
             <Route path="/electronics" element={<Electronics />} />
             <Route path="/mathematics" element={<Mathematics/>} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
         </SpaceBetween>
     </div>
