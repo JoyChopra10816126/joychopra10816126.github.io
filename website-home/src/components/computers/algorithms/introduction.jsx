@@ -4,9 +4,9 @@ import { useMode } from "../../mode-selector/mode-context";
 import MathText from "../../latex/math-text";
 
 const AlgorithmsIntroduction = () => {
-  const { learningMode } = useMode();
+  const { isFormalMode } = useMode();
   let content = "";
-  if (!learningMode) {
+  if (isFormalMode) {
     content = (<MathText>
       Let {"\\( S \\)"} be the set of all states of a computational system {"\\( C \\)"}.
       <br />

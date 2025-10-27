@@ -2,29 +2,29 @@ import { SpaceBetween, StatusIndicator, Toggle } from "@cloudscape-design/compon
 import { useMode } from "./mode-context";
 
 const ModeSelector = () => {
-  const { learningMode, setLearningMode } = useMode()
+  const { isFormalMode, setIsFormalMode } = useMode()
 
-  const statusDescription = learningMode ?  "Beginner" : "Formal";
+  const statusDescription = isFormalMode ? "Formal" : "Beginner";
 
   return (
     <SpaceBetween direction="vertical" size="xxs">
       <SpaceBetween direction="horizontal" size="xxs">
         <img
-          src="/formal-mode.png"
-          alt="F"
+          src="/beginner-mode.png"
+          alt="B"
           width={24}
           height={24}
         />
         <Toggle
           onChange={({ detail }) =>
-            setLearningMode(detail.checked)
+            setIsFormalMode(detail.checked)
           }
-          checked={learningMode}
+          checked={isFormalMode}
         />
 
         <img
-          src="/beginner-mode.png"
-          alt="b"
+          src="/formal-mode.png"
+          alt="F"
           width={24}
           height={24}
         />

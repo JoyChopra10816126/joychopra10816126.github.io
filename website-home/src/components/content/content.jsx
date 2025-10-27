@@ -11,6 +11,7 @@ import { SpaceBetween } from "@cloudscape-design/components";
 import NotFound from "../not-found/not-found";
 import Algorithms from "../computers/algorithms";
 import AlgorithmsIntroduction from "../computers/algorithms/introduction";
+import TimeComplexity from "../computers/algorithms/time-complexity";
 
 const Content = () => {
   return (
@@ -26,6 +27,7 @@ const Content = () => {
             <Route path="/computers" element={<Computers />} />
             <Route path="/computers/algorithms" element={<Algorithms/>} />
             <Route path="/computers/algorithms/introduction" element={<AlgorithmsIntroduction/>} />
+            <Route path="/computers/algorithms/time-complexity" element={<TimeComplexity/>} />
             
             <Route path="*" element={<NotFound />} />
         </Routes>

@@ -28,6 +28,11 @@ const Algorithms = () => {
             description: "Introduction to algorithms",
             url: "/computers/algorithms/introduction"
           },
+          {
+            name: "Time complexity",
+            description: "How fast algorithms run?",
+            url: "/computers/algorithms/time-complexity"
+          },
         ]}
       />
     </div>

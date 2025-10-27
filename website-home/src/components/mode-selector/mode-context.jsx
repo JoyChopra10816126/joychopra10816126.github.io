@@ -3,10 +3,10 @@ import { createContext, useContext, useState } from "react";
 const ModeContext = createContext();
 
 export function ModeProvider({ children }) {
-  const [learningMode, setLearningMode] = useState(false);
+  const [isFormalMode, setIsFormalMode] = useState(false);
 
   return (
-    <ModeContext.Provider value={{ learningMode, setLearningMode }}>
+    <ModeContext.Provider value={{ isFormalMode, setIsFormalMode }}>
       {children}
     </ModeContext.Provider>
   );
