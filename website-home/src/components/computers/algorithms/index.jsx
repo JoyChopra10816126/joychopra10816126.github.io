@@ -30,8 +30,13 @@ const Algorithms = () => {
           },
           {
             name: "Time complexity",
-            description: "How fast algorithms run?",
+            description: "How fast an algorithm runs?",
             url: "/computers/algorithms/time-complexity"
+          },
+          {
+            name: "Space complexity",
+            description: "How much memory an algorithm occupies?",
+            url: "/computers/algorithms/space-complexity"
           },
         ]}
       />

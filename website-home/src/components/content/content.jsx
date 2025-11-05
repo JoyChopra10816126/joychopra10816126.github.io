@@ -12,6 +12,7 @@ import NotFound from "../not-found/not-found";
 import Algorithms from "../computers/algorithms";
 import AlgorithmsIntroduction from "../computers/algorithms/introduction";
 import TimeComplexity from "../computers/algorithms/time-complexity";
+import SpaceComplexity from "../computers/algorithms/space-complexity";
 
 const Content = () => {
   return (
@@ -25,9 +26,12 @@ const Content = () => {
 
             {/* Computers */}
             <Route path="/computers" element={<Computers />} />
+
+            {/* Algorithms */}
             <Route path="/computers/algorithms" element={<Algorithms/>} />
             <Route path="/computers/algorithms/introduction" element={<AlgorithmsIntroduction/>} />
             <Route path="/computers/algorithms/time-complexity" element={<TimeComplexity/>} />
+            <Route path="/computers/algorithms/space-complexity" element={<SpaceComplexity/>} />
             
             <Route path="*" element={<NotFound />} />
         </Routes>
