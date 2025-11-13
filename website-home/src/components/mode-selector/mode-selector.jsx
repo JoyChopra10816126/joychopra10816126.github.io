@@ -1,11 +1,16 @@
 import { SpaceBetween, Tabs } from "@cloudscape-design/components";
-import { Mode, useMode } from "./mode-context";
+import { getModeFromId, Mode, useMode } from "./mode-context";
 
 const ModeSelector = () => {
-  const { mode, setMode } = useMode()
+  const { setMode } = useMode()
 
   return (
     <Tabs
+      onChange={(event) => {
+        const modeId = event.detail.activeTabId
+        const newMode = getModeFromId(modeId)
+        setMode(newMode)
+      }}
       tabs={[
         {
           label: (<SpaceBetween direction="horizontal" size="xxs">

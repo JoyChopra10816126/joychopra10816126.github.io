@@ -33,3 +33,14 @@ export function ModeProvider({ children }) {
 export function useMode() {
   return useContext(ModeContext);
 }
+
+export function getModeFromId(modeId){
+  let newMode = undefined;
+  for (const mode of Object.values(Mode)){
+    if (mode.id === modeId){
+      newMode = mode;
+      break;
+    }
+  }
+  return newMode;
+}
