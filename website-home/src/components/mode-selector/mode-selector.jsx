@@ -1,36 +1,49 @@
-import { SpaceBetween, StatusIndicator, Toggle } from "@cloudscape-design/components";
-import { useMode } from "./mode-context";
+import { SpaceBetween, Tabs } from "@cloudscape-design/components";
+import { Mode, useMode } from "./mode-context";
 
 const ModeSelector = () => {
-  const { isFormalMode, setIsFormalMode } = useMode()
-
-  const statusDescription = isFormalMode ? "Formal" : "Beginner";
+  const { mode, setMode } = useMode()
 
   return (
-    <SpaceBetween direction="vertical" size="xxs">
-      <SpaceBetween direction="horizontal" size="xxs">
-        <img
-          src="/beginner-mode.png"
-          alt="B"
-          width={24}
-          height={24}
-        />
-        <Toggle
-          onChange={({ detail }) =>
-            setIsFormalMode(detail.checked)
-          }
-          checked={isFormalMode}
-        />
-
-        <img
-          src="/formal-mode.png"
-          alt="F"
-          width={24}
-          height={24}
-        />
-      </SpaceBetween>
-      <StatusIndicator type="info">{statusDescription}</StatusIndicator>
-    </SpaceBetween>
+    <Tabs
+      tabs={[
+        {
+          label: (<SpaceBetween direction="horizontal" size="xxs">
+            <img
+              src={Mode.BASIC.imgSource}
+              alt="B"
+              width={24}
+              height={24}
+            />
+            {Mode.BASIC.label}
+          </SpaceBetween>),
+          id: Mode.BASIC.id,
+        },
+        {
+          label: (<SpaceBetween direction="horizontal" size="xxs">
+            <img
+              src={Mode.EXAMPLES.imgSource}
+              alt="E"
+              width={24}
+              height={24}
+            />
+            {Mode.EXAMPLES.label}
+          </SpaceBetween>),
+          id: Mode.EXAMPLES.id,
+        }, {
+          label: (<SpaceBetween direction="horizontal" size="xxs">
+            <img
+              src={Mode.ADVANCED.imgSource}
+              alt="A"
+              width={24}
+              height={24}
+            />
+            {Mode.ADVANCED.label}
+          </SpaceBetween>),
+          id: Mode.ADVANCED.id,
+        },
+      ]}
+    />
   );
 }
 
