@@ -1,6 +1,6 @@
 import { Container, Header } from "@cloudscape-design/components";
 import ModeSelector from "../../mode-selector/mode-selector";
-import { Mode, useMode } from "../../mode-selector/mode-context";
+import { isAdvancedMode, isBasicMode, useMode } from "../../mode-selector/mode-context";
 import MathText from "../../latex/math-text";
 
 const AlgorithmsIntroduction = () => {
@@ -9,7 +9,7 @@ const AlgorithmsIntroduction = () => {
 
   if(!mode){
     content = "";
-  } else if (mode["id"] === Mode.ADVANCED["id"]) {
+  } else if (isAdvancedMode(mode)) {
     content = (<MathText>
       Let {"\\( S \\)"} be the set of all states of a computational system {"\\( C \\)"}.
       <br />
@@ -46,7 +46,7 @@ const AlgorithmsIntroduction = () => {
     </MathText>
     );
   }
-  else if(mode === Mode.BASIC) {
+  else if(isBasicMode(mode)) {
     content = (
       <div>
         1. An algorithm is a set of clear instructions for the computer.

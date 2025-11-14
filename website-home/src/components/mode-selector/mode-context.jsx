@@ -44,3 +44,15 @@ export function getModeFromId(modeId){
   }
   return newMode;
 }
+
+export function isBasicMode(mode) {
+  return mode === Mode.BASIC;
+}
+
+export function isExamplesMode(mode) {
+  return mode === Mode.EXAMPLES;
+}
+
+export function isAdvancedMode(mode) {
+  return mode === Mode.ADVANCED;
+}

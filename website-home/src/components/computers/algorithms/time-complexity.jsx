@@ -1,12 +1,15 @@
 import { Container, Header } from "@cloudscape-design/components";
 import ModeSelector from "../../mode-selector/mode-selector";
-import { useMode } from "../../mode-selector/mode-context";
+import { isAdvancedMode, isBasicMode, useMode } from "../../mode-selector/mode-context";
 import MathText from "../../latex/math-text";
 
 const TimeComplexity = () => {
-  const { isFormalMode } = useMode();
+  const { mode } = useMode();
+
   let content = "";
-  if (isFormalMode) {
+   if(!mode){
+      content = "";
+  } else if (isAdvancedMode(mode)) {
     content = (<MathText>
       <b>Time complexity of an algorithm</b> is a function that represents the amount of time
       taken by algorithm as a function of its input size.
@@ -44,7 +47,7 @@ const TimeComplexity = () => {
     </MathText>
     );
   }
-  else {
+  else if (isBasicMode(mode)){
     content = (
       <div>
         1. Time complexity measures how fast an algorithm runs.
