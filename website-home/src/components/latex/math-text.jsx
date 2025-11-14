@@ -5,12 +5,13 @@ export default function MathText({ children }) {
 
   useEffect(() => {
     const renderMath = () => {
-      if (window.MathJax && containerRef.current) {
-        window.MathJax.typesetPromise([containerRef.current]);
+        if (window.MathJax && containerRef.current) {
+          window.MathJax.typesetPromise([containerRef.current]);
+        }
       }
-    };
-    renderMath();
+
+      renderMath();
   }, [children]); // re-typeset on content change
 
-  return <span><div ref={containerRef}>{children}</div></span>;
+  return <span ref={containerRef}>{children}</span>;
 }
