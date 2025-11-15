@@ -1,28 +1,21 @@
 import { Container, Header } from "@cloudscape-design/components";
 import ModeSelector from "../../mode-selector/mode-selector";
-import { useMode } from "../../mode-selector/mode-context";
+import { isBasicMode, useMode } from "../../mode-selector/mode-context";
 import MathText from "../../latex/math-text";
 
 const SpaceComplexity = () => {
-  const { isFormalMode } = useMode();
+  const { mode } = useMode();
   let content = "";
-  if (isFormalMode) {
-    content = (<MathText>
-      
+  if (!mode) {
+      content = "";
+    // } else if (isAdvancedMode(mode)) {
 
-    </MathText>
-    );
-  }
-  else {
-    content = (
-      <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </div>
-    )
-  }
+    // } else if (isBasicMode(mode)) {
+
+    } else {
+
+    }
+
   return (
     <div className="content">
       <Container
