@@ -7,6 +7,7 @@ import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
 import { HashRouter } from 'react-router-dom';
 import { ModeProvider } from './components/mode-selector/mode-context';
+import GooglePageView from './components/analytics/page-view';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           toolsHide
           content={
             <HashRouter>
+              <GooglePageView/>
               <Content />
             </HashRouter>
           }

@@ -116,7 +116,7 @@ const AlgorithmsIntroduction = () => {
         <br/>
         After step 2 of the algorithm, the state becomes <MathText>{"\\( s_2 = [x, 2x, 2x + 5]\\)"}</MathText>
         <br/>
-        The output is then returned from the 3rd dimension. 
+        The output is then returned from the 3rd dimension of <MathText>{"\\( s_2 \\)"}</MathText>. 
         The output state can be represented as follows.
         <MathText>{"$$ O = \\{[x, 2x, 2x + 5] \\; | \\; \\; \\forall x \\in \\mathbb{R}\\} $$"}</MathText>
         <br/>
