@@ -1,3 +1,7 @@
 .content a {
   color: #0073bb !important;
 }
+
+.spaced-list li {
+  margin-bottom: 8px;
+}
