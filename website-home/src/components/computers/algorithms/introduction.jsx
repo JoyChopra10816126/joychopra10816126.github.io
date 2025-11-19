@@ -47,15 +47,15 @@ const AlgorithmsIntroduction = () => {
 
       On <b>order</b> - Each computational step is applied in order as described below.
       Let <MathText>{"\\( s_i \\)"}</MathText> denote the
-      state of <MathText>{"\\( C \\)"}</MathText>
-      after <MathText>{"\\( i \\)"}</MathText>th computational step is executed.
+      state of <MathText>{"\\( C \\)"}</MathText> after &nbsp;
+      <MathText>{"\\( i \\)"}</MathText>th computational step is executed.
       Further, let <MathText>{"\\( s_0 \\in I \\)"}</MathText> be the initial computational state
       and let <MathText>{"\\( s_n \\in O \\)"}</MathText> be the final
       computational state after execution of the algorithm
 
       Then, we have
 
-      <MathText>{"$$ s_{i + 1} = \\delta_i (s_i), \\;\\; i = 0, 1, 2 \\dots, n - 1 $$"}</MathText>
+      <MathText>{"$$ s_{i + 1} = \\delta_{i + 1} (s_i), \\;\\; i = 0, 1, 2 \\dots, n - 1 $$"}</MathText>
 
     </div>
     )}
@@ -104,7 +104,6 @@ const AlgorithmsIntroduction = () => {
         <br />
         Here the input state can be represented as follows.
         <MathText>{"$$ I = \\{[x, 0, 0] \\; | \\; \\; \\forall x \\in \\mathbb{R}\\} $$"}</MathText>
-        <br />
         After step 1 of the algorithm, the state becomes <MathText>{"\\( s_1 = [x, 2x, 0]\\)"}</MathText>
         <br />
         After step 2 of the algorithm, the state becomes <MathText>{"\\( s_2 = [x, 2x, 2x + 5]\\)"}</MathText>
@@ -112,18 +111,15 @@ const AlgorithmsIntroduction = () => {
         The output is then returned from the 3rd dimension of <MathText>{"\\( s_2 \\)"}</MathText>.
         The output state can be represented as follows.
         <MathText>{"$$ O = \\{[x, 2x, 2x + 5] \\; | \\; \\; \\forall x \\in \\mathbb{R}\\} $$"}</MathText>
-        <br />
         Now let us take a closer look at the state transition functions or the computational steps
         of the algorithm.
         <br />
         For the first step, we have
         <MathText>{"$$ \\delta_1 = I \\to \\mathbb{R}^3$$"}</MathText>
         <MathText>{"$$ = \\{ ((i_1, 0, 0), (i_1, 2i_1, 0)) \\; | \\; \\; \\forall i_1 \\in \\mathbb{R} \\} $$"}</MathText>
-        <br />
         Similarly, for the second step, we have
         <MathText>{"$$ \\delta_2 = \\mathbb{R}^3 \\to O$$"}</MathText>
         <MathText>{"$$ = \\{ ((i_1, i_2, i_3), (i_1, i_2, i_2 + 5)) \\; | \\; \\; \\forall i_1 \\in \\mathbb{R} \\} $$"}</MathText>
-        <br />
         And our algorithm is represented as follows
         <MathText>{"$$ A = (\\delta_1 , \\delta_2 ) $$"}</MathText>
       </div>
