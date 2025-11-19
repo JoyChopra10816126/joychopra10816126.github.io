@@ -55,7 +55,7 @@ const AlgorithmsIntroduction = () => {
 
       Then, we have
 
-      <MathText>{"$$ s_{i + 1} = \\delta_{i + 1} (s_i), \\;\\; i = 0, 1, 2 \\dots, n - 1 $$"}</MathText>
+      <MathText>{"$$ s_i = \\delta_i (s_{i - 1}), \\;\\; i = 1, 2 \\dots, n $$"}</MathText>
 
     </div>
     )}
