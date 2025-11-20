@@ -35,8 +35,13 @@ const Algorithms = () => {
           },
           {
             name: "Space complexity",
-            description: "How much memory an algorithm consumes?",
+            description: "How much memory an algorithm allocates?",
             url: "/computers/algorithms/space-complexity"
+          },
+          {
+            name: "Searching",
+            description: "Find what you want",
+            url: "/computers/algorithms/searching"
           },
         ]}
       />
