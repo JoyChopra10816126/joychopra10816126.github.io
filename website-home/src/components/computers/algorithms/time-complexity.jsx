@@ -69,19 +69,19 @@ const TimeComplexity = () => {
     <div>
       <b>Example 1</b>
       <br />
-      Consider the following algorithm.
+      Consider the following algorithm <MathText>{"\\( Alg \\)"}</MathText>.
       <br />
-      <b>Input</b> - An array a[i] of n elements
+      <b>Input</b> - An array A of n elements
       <br />
       Step 1 - Initialise a loop variable i = 0
       <br />
       Step 2 - Until i = n - 1, do the following
       <br />
-      &nbsp;&nbsp;Step 2.1 - a[i] = 2 * a[i]
+      &nbsp;&nbsp;Step 2.1 - A[i] = 2 * A[i]
       <br />
       &nbsp;&nbsp;Step 2.2 - i = i + 1
       <br />
-      <b>Output</b> - array a[i] with updated values
+      <b>Output</b> - array A with updated values
       <br /><br />
 
       Let us analyse the time complexity for above algorithm.
@@ -97,9 +97,12 @@ const TimeComplexity = () => {
       <br />
       Overall time taken by the algorithm A is as follows
       <br />
-      <MathText>{"$$ T_A(n) = T_{\\delta_1}(n) + T_{\\delta_2}(n)$$"}</MathText>
+      <MathText>{"$$ T_{Alg}(n) = T_{\\delta_1}(n) + T_{\\delta_2}(n)$$"}</MathText>
       <MathText>{"$$ = O(2n) + O(1) $$"}</MathText>
       <MathText>{"$$ = O(2n + 1) = O(n) $$"}</MathText>
+
+      So the algorithm takes linear time.
+      <br/><br/>
 
       <b>Example 2</b>
       <br />

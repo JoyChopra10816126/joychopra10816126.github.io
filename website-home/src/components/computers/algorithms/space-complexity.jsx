@@ -49,7 +49,55 @@ const SpaceComplexity = () => {
     </div>
   );
 
-  const examplesContent = "";
+  const examplesContent = (
+    <div>
+      <b>Example 1</b>
+      <br/>
+
+      Consider the following algorithm <MathText>{"\\( Alg \\)"}</MathText>
+      <br/>
+
+      <b>Input</b> - An array A of n elements
+      <br />
+      Step 1 - Initialise a new array B of n elements
+      <br />
+      Step 2 - Assign B[0] = A[0] + A[1]
+      <br/>
+      Step 3 - Initialise a loop variable i = 1
+      <br />
+      Step 4 - Until i = n - 2, do the following
+      <br />
+      &nbsp;&nbsp;Step 4.1 - B[i] = A[i - 1] + A[i] + A[i + 1]
+      <br />
+      &nbsp;&nbsp;Step 4.2 - i = i + 1
+      <br />
+      Step 5 - Assign B[n - 1] = A[n - 2] + A[n - 1] 
+      <br />
+      <b>Output</b> - array B of n elements
+      <br /><br />
+
+      Let us analyse the space complexity of above algorithm.
+      <br/>
+      Step 1 creates a new array with n elements. So it allocates 
+      &nbsp;<MathText>{"\\( S_{\\delta_1}(n) = O(n)\\)"}</MathText> memory.
+      <br/>
+      Step 2 is an assignment operation. It does not allocate new memory.
+      <br/>
+      Step 3 creates a new variable with 1 size. So it allocates
+      &nbsp;<MathText>{"\\( S_{\\delta_3} = O(1)\\)"}</MathText>
+      <br/>
+      Steps 4 and 5 are also assignment operations. No new memory is allocated.
+
+      Overall space occupied by the algorithm is
+      <MathText>{"$$ S_{Alg}(n) = S(n) $$"}</MathText>
+      <MathText>{"$$ = S_{\\delta_1}(n) + S_{\\delta_2}(n) + " + 
+      "S_{\\delta_3}(n) + S_{\\delta_4}(n) + S_{\\delta_5}(n)$$"}</MathText>
+      <MathText>{"$$ = O(n) + 0 + O(1) + 0 + 0 $$"}</MathText>
+      <MathText>{"$$ = O(n + 1) = O(n) $$"}</MathText>
+
+      So the algorithm occupies linear space.
+    </div>
+  );
 
   return (
     <div className="content">
