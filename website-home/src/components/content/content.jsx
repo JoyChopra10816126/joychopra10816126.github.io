@@ -14,6 +14,7 @@ import AlgorithmsIntroduction from "../computers/algorithms/introduction";
 import TimeComplexity from "../computers/algorithms/time-complexity";
 import SpaceComplexity from "../computers/algorithms/space-complexity";
 import Searching from "../computers/algorithms/searching";
+import LinearSearch from "../computers/algorithms/linear-search";
 
 const Content = () => {
   return (
@@ -34,6 +35,7 @@ const Content = () => {
           <Route path="/computers/algorithms/time-complexity" element={<TimeComplexity />} />
           <Route path="/computers/algorithms/space-complexity" element={<SpaceComplexity />} />
           <Route path="/computers/algorithms/searching" element={<Searching />} />
+          <Route path="/computers/algorithms/linear-search" element={<LinearSearch />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

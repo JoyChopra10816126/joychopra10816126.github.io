@@ -43,6 +43,16 @@ const Algorithms = () => {
             description: "Find what you want",
             url: "/computers/algorithms/searching"
           },
+          {
+            name: "Linear Search",
+            description: "Searching sequentially",
+            url: "/computers/algorithms/linear-search"
+          },
+          {
+            name: "Binary Search",
+            description: "Searching in ordered collections",
+            url: "/computers/algorithms/binary-search"
+          },
         ]}
       />
     </div>
