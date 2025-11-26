@@ -9,13 +9,11 @@ const MenuBar = () => {
         identity={{
           href: "/",
           title: (
-            <p>Technology Made&nbsp;
-              <span style={{"color": "orange"}}>S</span>imple
-            </p>
+            <p>Technology Made Clear</p>
           ),
           logo: {
-            src: "/tms.png",
-            alt: "TMS"
+            src: "/tmc.png",
+            alt: "TMC"
           }
         }}
       />
