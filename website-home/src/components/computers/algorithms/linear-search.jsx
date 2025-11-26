@@ -56,10 +56,20 @@ const LinearSearch = () => {
       </MathTextFormula>
       And the computational steps are defined as described below.
       <MathTextFormula>
-        {"\\delta_i(x_1, x_2) = \\begin{cases} (x_1 + 1, x_2) & P(s_i) = \\text{false} \\;" + 
+        {
+        "\\delta_i(x_1, x_2) = \\begin{cases} (x_1 + 1, x_2) & P(s_i) = \\text{false} \\;" + 
         " \\text{or} \\; x_2 \\neq \\bot \\\\ (x_1 + 1, s_i) & P(s_i) = \\text{true}" + 
-        "\\end{cases}"}
+        " \\; \\text{and} \\; x_2 = \\bot \\end{cases}"
+        }
       </MathTextFormula>
+
+      The first case represents the situation when the index is updated but result remains
+      the same. This happens in 2 cases - first, if the ith element is not the matching element
+      or if a matching element is already found.
+
+      The second case represents the situation when the result is updated.
+      This happens when the ith element is a matching element and no other matching 
+      element is found till now.
     </div>
   );
 
