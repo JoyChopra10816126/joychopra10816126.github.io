@@ -18,10 +18,10 @@ function App() {
           headerSelector="#menu-bar"
           toolsHide
           content={
-            <HashRouter>
+            <BrowserRouter basename="/joychopra10816126.github.io">
               <GooglePageView/>
               <Content />
-            </HashRouter>
+            </BrowserRouter>
           }
           navigation={
             <HashRouter>
