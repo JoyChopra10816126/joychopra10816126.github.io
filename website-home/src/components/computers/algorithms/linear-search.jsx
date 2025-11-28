@@ -126,21 +126,21 @@ const LinearSearch = () => {
         {"P(s_1) = (4 = 7) = false"}
       </MathTextFormula>
       <MathTextFormula>
-        {"s_2 = \\delta_1(s_1) = (2, \\bot)"}
+        {"s_2 = \\delta_2(s_1) = (2, \\bot)"}
       </MathTextFormula>
       Step 3
       <MathTextFormula>
         {"P(s_2) = (5 = 7) = false"}
       </MathTextFormula>
       <MathTextFormula>
-        {"s_3 = \\delta_1(s_2) = (3, \\bot)"}
+        {"s_3 = \\delta_3(s_2) = (3, \\bot)"}
       </MathTextFormula>
       Step 4
       <MathTextFormula>
         {"P(s_3) = (7 = 7) = true"}
       </MathTextFormula>
       <MathTextFormula>
-        {"s_4 = \\delta_1(s_3) = (6, 7) \\in O"}
+        {"s_4 = \\delta_4(s_3) = (6, 7) \\in O"}
       </MathTextFormula>
       The algorithm halts at step 4 as the matching element is found.
     </div>
