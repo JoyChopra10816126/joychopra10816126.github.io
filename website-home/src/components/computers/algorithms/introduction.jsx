@@ -1,5 +1,6 @@
 import MathText from "../../latex/math-text";
 import ContentPage from "../../content/content-page";
+import MathTextFormula from "../../latex/math-text-formula";
 
 const AlgorithmsIntroduction = () => {
   return (
@@ -57,6 +58,10 @@ const AlgorithmsIntroduction = () => {
 
           <MathText>{"$$ s_i = \\delta_i (s_{i - 1}), \\;\\; i = 1, 2 \\dots, n $$"}</MathText>
 
+          On <b>halting</b> - The execution stops when the computational system reaches an
+          output state. In particular, the algorithm halts at step k if 
+          we have 
+          <MathTextFormula>{"s_k = \\delta_k (s_{k - 1}) \\in O"}</MathTextFormula>
         </div>
         )}
         examplesContent={(
@@ -119,7 +124,7 @@ const AlgorithmsIntroduction = () => {
             <MathText>{"$$ = \\{ ((i_1, 0, 0), (i_1, 2i_1, 0)) \\; | \\; \\; \\forall i_1 \\in \\mathbb{R} \\} $$"}</MathText>
             Similarly, for the second step, we have
             <MathText>{"$$ \\delta_2 = \\mathbb{R}^3 \\to O$$"}</MathText>
-            <MathText>{"$$ = \\{ ((i_1, i_2, i_3), (i_1, i_2, i_2 + 5)) \\; | \\; \\; \\forall i_1 \\in \\mathbb{R} \\} $$"}</MathText>
+            <MathText>{"$$ = \\{ ((i_1, 2i_1, 0), (i_1, 2i_1, 2i_1 + 5)) \\; | \\; \\; \\forall i_1 \\in \\mathbb{R} \\} $$"}</MathText>
             And our algorithm is represented as follows
             <MathText>{"$$ A = (\\delta_1 , \\delta_2 ) $$"}</MathText>
           </div>
