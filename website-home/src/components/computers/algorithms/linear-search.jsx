@@ -45,7 +45,7 @@ const LinearSearch = () => {
       <br/><br/>
 
       Then the <b>linear search algorithm</b> is defined as follows
-      <MathText>{"$$ A_{LS} = (\\delta_1, \\delta_2, \\dots, \\delta_{n + 1} ) $$"}</MathText>
+      <MathText>{"$$ A_{LS} = (\\delta_1, \\delta_2, \\dots, \\delta_n ) $$"}</MathText>
       The input set of the algorithm is defined as below
       <MathTextFormula>
         {"I = \\{ (0, \\bot) \\}"}
@@ -57,19 +57,44 @@ const LinearSearch = () => {
       And the computational steps are defined as described below.
       <MathTextFormula>
         {
-        "\\delta_i(x_1, x_2) = \\begin{cases} (x_1 + 1, x_2) & P(s_i) = \\text{false} \\;" + 
-        " \\text{or} \\; x_2 \\neq \\bot \\\\ (x_1 + 1, s_i) & P(s_i) = \\text{true}" + 
-        " \\; \\text{and} \\; x_2 = \\bot \\end{cases}"
+        "\\delta_i(x_1, x_2) = \\begin{cases} (x_1 + 1, x_2) & P(s_i) = \\text{false} " +
+        "\\\\ (n + 1, s_i) & P(s_i) = \\text{true} " + 
+        "\\end{cases}"
         }
       </MathTextFormula>
 
       The first case represents the situation when the index is updated but result remains
-      the same. This happens in 2 cases - first, if the ith element is not the matching element
-      or if a matching element is already found.
+      the same. This happens when the ith element is not the matching element.
 
       The second case represents the situation when the result is updated.
-      This happens when the ith element is a matching element and no other matching 
-      element is found till now.
+      This happens when the ith element is a matching element. The algorithm
+      halts in this state.
+
+      <br/><br/>
+      Now let us analyse the <b>time complexity</b> for linear search algorithm.
+      The time complexity of an algorithm is sum of time complexity of its computation
+      steps. Each step in the linear search algorithm does 2 variable assignment operations.
+      And in the worst case, there are n computational steps. Hence the worst case
+      time complexity is as follows
+
+      <MathTextFormula>
+        {"T_{A_{LS}}(n) = T_{\\delta_1}(n) + T_{\\delta_1}(n) \\dots + T_{\\delta_{n}}(n)"}
+      </MathTextFormula>
+      <MathTextFormula>
+        {"= 2 + 2 \\dots + 2 \\; (n \\; \\text{times})"}
+      </MathTextFormula>
+      <MathTextFormula>
+        {"= 2n = O(n)"}
+      </MathTextFormula>
+
+      Now let us analyse the <b>space complexity</b> of the linear search algorithm.
+      There are 2 variables allocated in the algorithm. They 
+      are <MathTextInline>{"x_1"}</MathTextInline> and <MathTextInline>{"x_2"}</MathTextInline>.
+      Hence the space occupied is 2 units or O(1).
+
+      <b/>
+      Hence, the time complexity of linear search is O(n) and space complexity is O(1).
+      
     </div>
   );
 
