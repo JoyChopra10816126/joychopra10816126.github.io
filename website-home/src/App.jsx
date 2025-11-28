@@ -9,14 +9,6 @@ import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { ModeProvider } from './components/mode-selector/mode-context';
 import GooglePageView from './components/analytics/page-view';
 
-const isLocal =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-
-const basename = isLocal
-  ? "/" // for local development
-  : "/joychopra10816126.github.io"; // for GitHub Pages
-    
 
 function App() {
   return (
@@ -27,7 +19,7 @@ function App() {
           headerSelector="#menu-bar"
           toolsHide
           content={
-            <BrowserRouter basename={basename}>
+            <BrowserRouter basename={"/"}>
               <GooglePageView/>
               <Content />
             </BrowserRouter>
