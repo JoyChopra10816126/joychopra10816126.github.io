@@ -5,7 +5,7 @@ import {
 } from '@cloudscape-design/components';
 import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { ModeProvider } from './components/mode-selector/mode-context';
 import GooglePageView from './components/analytics/page-view';
 
@@ -18,10 +18,10 @@ function App() {
           headerSelector="#menu-bar"
           toolsHide
           content={
-            <HashRouter>
+            <BrowserRouter basename="/joychopra10816126.github.io">
               <GooglePageView/>
               <Content />
-            </HashRouter>
+            </BrowserRouter>
           }
           navigation={
             <HashRouter>
