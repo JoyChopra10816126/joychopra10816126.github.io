@@ -1,5 +1,6 @@
 import { Cards } from "@cloudscape-design/components";
 import { Link } from "react-router-dom";
+import { NUM_CARDS } from "../../constants/website";
 
 const Electronics = () => {
   return (
@@ -20,7 +21,7 @@ const Electronics = () => {
         }}
         cardsPerRow={[
           { cards: 1 },
-          { minWidth: 500, cards: 2 }
+          { minWidth: 500, cards: NUM_CARDS }
         ]}
         items={[
           {

@@ -1,7 +1,6 @@
 import './App.css';
 import {
   AppLayout,
-  SideNavigation,
 } from '@cloudscape-design/components';
 import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
@@ -18,37 +17,11 @@ function App() {
         <AppLayout
           headerSelector="#menu-bar"
           toolsHide
+          navigationHide
           content={
             <BrowserRouter basename={"/"}>
               <GooglePageView/>
               <Content />
-            </BrowserRouter>
-          }
-          navigation={
-            <BrowserRouter basename={"/"}>
-              <SideNavigation
-                header={{
-                  href: '/',
-                  text: 'Topics',
-                }}
-                items={[
-                  {
-                    type: 'link',
-                    text: 'Computers',
-                    href: '/computers'
-                  },
-                  {
-                    type: 'link',
-                    text: 'Electronics',
-                    href: '/electronics'
-                  },
-                  {
-                    type: 'link',
-                    text: 'Mathematics',
-                    href: '/mathematics'
-                  },
-                ]}
-              />
             </BrowserRouter>
           }
         >
