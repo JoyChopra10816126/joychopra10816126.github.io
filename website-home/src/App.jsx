@@ -5,7 +5,7 @@ import {
 } from '@cloudscape-design/components';
 import MenuBar from './components/menu-bar/menu-bar';
 import Content from './components/content/content';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ModeProvider } from './components/mode-selector/mode-context';
 import GooglePageView from './components/analytics/page-view';
 
@@ -25,7 +25,7 @@ function App() {
             </BrowserRouter>
           }
           navigation={
-            <HashRouter>
+            <BrowserRouter basename={"/"}>
               <SideNavigation
                 header={{
                   href: '/',
@@ -49,7 +49,7 @@ function App() {
                   },
                 ]}
               />
-            </HashRouter>
+            </BrowserRouter>
           }
         >
         </AppLayout>
