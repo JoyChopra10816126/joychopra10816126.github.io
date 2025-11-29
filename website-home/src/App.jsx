@@ -7,6 +7,7 @@ import Content from './components/content/content';
 import { BrowserRouter } from 'react-router-dom';
 import { ModeProvider } from './components/mode-selector/mode-context';
 import GooglePageView from './components/analytics/page-view';
+import Footer from './components/footer/footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <ModeProvider>
         <AppLayout
           headerSelector="#menu-bar"
+          footerSelector="#page-footer"
           toolsHide
           navigationHide
           content={
@@ -27,6 +29,7 @@ function App() {
         >
         </AppLayout>
       </ModeProvider>
+      <Footer/>
     </div>
   );
 }
