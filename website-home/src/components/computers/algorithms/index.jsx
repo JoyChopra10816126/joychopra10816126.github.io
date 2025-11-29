@@ -26,33 +26,58 @@ const Algorithms = () => {
         items={[
           {
             name: "Introduction",
-            description: "Introduction to algorithms",
+            description: "What are algorithms",
             url: "/computers/algorithms/introduction"
           },
           {
-            name: "Time complexity",
-            description: "How fast an algorithm runs?",
-            url: "/computers/algorithms/time-complexity"
-          },
-          {
-            name: "Space complexity",
-            description: "How much memory an algorithm allocates?",
-            url: "/computers/algorithms/space-complexity"
-          },
-          {
             name: "Searching",
-            description: "Find what you want",
+            description: "Introduction to algorithms",
             url: "/computers/algorithms/searching"
           },
           {
-            name: "Linear Search",
-            description: "Searching sequentially",
-            url: "/computers/algorithms/linear-search"
+            name: "Sorting",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/sorting"
           },
           {
-            name: "Binary Search",
-            description: "Searching in ordered collections",
-            url: "/computers/algorithms/binary-search"
+            name: "Hashing",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/hashing"
+          },
+          {
+            name: "Time and Space Complexity",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/time-space-complexity"
+          },
+          {
+            name: "Greedy technique",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/greedy"
+          },
+          {
+            name: "Dynamic programming technique",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/dynamic-programming"
+          },
+          {
+            name: "Divide and Conquer technique",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/divide-conquer"
+          },
+          {
+            name: "Graph traversal",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/graph-traversal"
+          },
+          {
+            name: "Minimum spanning trees",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/minimum-spanning-trees"
+          },
+          {
+            name: "Shortest paths",
+            description: "Introduction to algorithms",
+            url: "/computers/algorithms/shortest-paths"
           },
         ]}
       />

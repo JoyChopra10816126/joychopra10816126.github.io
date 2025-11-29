@@ -10,11 +10,6 @@ import Electronics from "../topics/electronics";
 import { SpaceBetween } from "@cloudscape-design/components";
 import NotFound from "../not-found/not-found";
 import Algorithms from "../computers/algorithms";
-import AlgorithmsIntroduction from "../computers/algorithms/introduction";
-import TimeComplexity from "../computers/algorithms/time-complexity";
-import SpaceComplexity from "../computers/algorithms/space-complexity";
-import Searching from "../computers/algorithms/searching";
-import LinearSearch from "../computers/algorithms/linear-search";
 
 const Content = () => {
   return (
@@ -31,11 +26,6 @@ const Content = () => {
 
           {/* Algorithms */}
           <Route path="/computers/algorithms" element={<Algorithms />} />
-          <Route path="/computers/algorithms/introduction" element={<AlgorithmsIntroduction />} />
-          <Route path="/computers/algorithms/time-complexity" element={<TimeComplexity />} />
-          <Route path="/computers/algorithms/space-complexity" element={<SpaceComplexity />} />
-          <Route path="/computers/algorithms/searching" element={<Searching />} />
-          <Route path="/computers/algorithms/linear-search" element={<LinearSearch />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
