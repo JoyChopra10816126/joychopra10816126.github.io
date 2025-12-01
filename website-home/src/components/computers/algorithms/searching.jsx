@@ -56,7 +56,12 @@ const Searching = () => {
 
   const advancedContent = (
     <div>
+      Searching is the operation of finding a value in a sequence of values.
+      Arrays and lists are the 2 basic ways of storing sequence of values
+      in a computer.
 
+      <br/>
+      An <b>array</b> is a continuous block of memory.
     </div>
   );
 
