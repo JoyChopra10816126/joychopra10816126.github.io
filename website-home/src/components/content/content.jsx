@@ -16,6 +16,7 @@ import ComputerNetworks from "../computers/computer-networks";
 import EngineeringMathematics from "../topics/engineering-mathematics";
 import ComputerOrganisationAndArchitecture from "../computers/computer-organization-and-architecture";
 import Databases from "../computers/databases";
+import DigitalLogic from "../computers/digital-logic";
 
 const Content = () => {
   return (
@@ -48,6 +49,9 @@ const Content = () => {
 
           {/* Databases */}
           <Route path="/computers/databases" element={<Databases />} />
+
+          {/* Digital Logic */}
+          <Route path="/computers/digital-logic" element={<DigitalLogic />} />
 
           {/* Default */}
           <Route path="*" element={<NotFound />} />
