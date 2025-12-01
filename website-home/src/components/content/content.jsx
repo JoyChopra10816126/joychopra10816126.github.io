@@ -17,6 +17,7 @@ import EngineeringMathematics from "../topics/engineering-mathematics";
 import ComputerOrganisationAndArchitecture from "../computers/computer-organization-and-architecture";
 import Databases from "../computers/databases";
 import DigitalLogic from "../computers/digital-logic";
+import OperatingSystem from "../computers/operating-system";
 
 const Content = () => {
   return (
@@ -52,6 +53,9 @@ const Content = () => {
 
           {/* Digital Logic */}
           <Route path="/computers/digital-logic" element={<DigitalLogic />} />
+
+          {/* Operating System */}
+          <Route path="/computers/operating-system" element={<OperatingSystem />} />
 
           {/* Default */}
           <Route path="*" element={<NotFound />} />

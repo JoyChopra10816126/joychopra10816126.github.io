@@ -25,11 +25,6 @@ const Algorithms = () => {
         ]}
         items={[
           {
-            name: "Introduction",
-            // description: "What are algorithms",
-            url: "/computers/algorithms/introduction"
-          },
-          {
             name: "Searching",
             description: "Finding a value in a sequence",
             url: "/computers/algorithms/searching"
