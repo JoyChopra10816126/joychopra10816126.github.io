@@ -26,57 +26,57 @@ const Algorithms = () => {
         items={[
           {
             name: "Introduction",
-            description: "What are algorithms",
+            // description: "What are algorithms",
             url: "/computers/algorithms/introduction"
           },
           {
             name: "Searching",
-            description: "Introduction to algorithms",
+            description: "Finding a value in a sequence",
             url: "/computers/algorithms/searching"
           },
           {
             name: "Sorting",
-            description: "Introduction to algorithms",
+            // description: "Ordering data quickly",
             url: "/computers/algorithms/sorting"
           },
           {
             name: "Hashing",
-            description: "Introduction to algorithms",
+            // description: "Fast data lookup",
             url: "/computers/algorithms/hashing"
           },
           {
             name: "Time and Space Complexity",
-            description: "Introduction to algorithms",
+            // description: "Measuring algorithm cost",
             url: "/computers/algorithms/time-space-complexity"
           },
           {
             name: "Greedy technique",
-            description: "Introduction to algorithms",
+            // description: "Choosing best step",
             url: "/computers/algorithms/greedy"
           },
           {
             name: "Dynamic programming technique",
-            description: "Introduction to algorithms",
+            // description: "Solving with subproblems",
             url: "/computers/algorithms/dynamic-programming"
           },
           {
             name: "Divide and Conquer technique",
-            description: "Introduction to algorithms",
+            // description: "Breaking into parts",
             url: "/computers/algorithms/divide-conquer"
           },
           {
             name: "Graph traversal",
-            description: "Introduction to algorithms",
+            // description: "Exploring graph nodes",
             url: "/computers/algorithms/graph-traversal"
           },
           {
             name: "Minimum spanning trees",
-            description: "Introduction to algorithms",
+            // description: "Lowest-cost connections",
             url: "/computers/algorithms/minimum-spanning-trees"
           },
           {
             name: "Shortest paths",
-            description: "Introduction to algorithms",
+            // description: "Finding minimal routes",
             url: "/computers/algorithms/shortest-paths"
           },
         ]}
