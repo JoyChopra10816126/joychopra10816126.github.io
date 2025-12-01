@@ -15,6 +15,7 @@ import CompilerDesign from "../computers/compiler-design";
 import ComputerNetworks from "../computers/computer-networks";
 import EngineeringMathematics from "../topics/engineering-mathematics";
 import ComputerOrganisationAndArchitecture from "../computers/computer-organization-and-architecture";
+import Databases from "../computers/databases";
 
 const Content = () => {
   return (
@@ -40,13 +41,17 @@ const Content = () => {
           {/* Computer Networks */}
           <Route path="/computers/computer-networks" element={<ComputerNetworks />} />
 
-
           {/* Computer Organisation And Architecture */}
           <Route path="/computers/computer-organization-and-architecture"
             element={<ComputerOrganisationAndArchitecture />}
           />
 
+          {/* Databases */}
+          <Route path="/computers/databases" element={<Databases />} />
+
+          {/* Default */}
           <Route path="*" element={<NotFound />} />
+ 
         </Routes>
       </SpaceBetween>
     </div>
