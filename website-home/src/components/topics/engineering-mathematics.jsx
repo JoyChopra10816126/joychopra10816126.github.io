@@ -2,7 +2,7 @@ import { Cards } from "@cloudscape-design/components";
 import { Link } from "react-router-dom";
 import { NUM_CARDS } from "../../constants/website";
 
-const Home = () => {
+const EngineeringMathematics = () => {
   return (
     <div className="content">
       <Cards
@@ -25,24 +25,24 @@ const Home = () => {
         ]}
         items={[
           {
-            name: "Computers",
-            description: "Study of computation and automation",
-            url: '/computers'
+            name: "Discrete mathematics",
+            // description: "Study of step-by-step problem solving",
+            // url: "/computers/algorithms"
           },
           {
-            name: "Electronics",
-            description: "Study of circuits and devices",
-            url: '/electronics'
+            name: "Linear Algebra",
+            // description: "Study of program translation techniques",
+            // url: "/computers/compiler-design"
           },
           {
-            name: "Mathematics",
-            description: "Study of number, logic and patterns",
-            url: '/mathematics'
+            name: "Calculus",
+            // description: "Study of program translation techniques",
+            // url: "/computers/compiler-design"
           },
           {
-            name: "Engineering mathematics",
-            // description: "Study of number, logic and patterns",
-            url: '/engineering-mathematics'
+            name: "Probability & Statistics",
+            // description: "Study of program translation techniques",
+            // url: "/computers/compiler-design"
           },
         ]}
       />
@@ -50,4 +50,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default EngineeringMathematics;

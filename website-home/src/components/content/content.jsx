@@ -13,6 +13,7 @@ import Algorithms from "../computers/algorithms";
 import Searching from "../computers/algorithms/searching";
 import CompilerDesign from "../computers/compiler-design";
 import ComputerNetworks from "../computers/computer-networks";
+import EngineeringMathematics from "../topics/engineering-mathematics";
 
 const Content = () => {
   return (
@@ -23,6 +24,7 @@ const Content = () => {
           <Route path="/" element={<Home />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/mathematics" element={<Mathematics />} />
+          <Route path="/engineering-mathematics" element={<EngineeringMathematics />} />
 
           {/* Computers */}
           <Route path="/computers" element={<Computers />} />
