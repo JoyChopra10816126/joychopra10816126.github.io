@@ -12,6 +12,7 @@ import NotFound from "../not-found/not-found";
 import Algorithms from "../computers/algorithms";
 import Searching from "../computers/algorithms/searching";
 import CompilerDesign from "../computers/compiler-design";
+import ComputerNetworks from "../computers/computer-networks";
 
 const Content = () => {
   return (
@@ -30,7 +31,11 @@ const Content = () => {
           <Route path="/computers/algorithms" element={<Algorithms />} />
           <Route path="/computers/algorithms/searching" element={<Searching />} />
 
+          {/* Compiler Design */}
           <Route path="/computers/compiler-design" element={<CompilerDesign />} />
+
+          {/* Computer Networks */}
+          <Route path="/computers/computer-networks" element={<ComputerNetworks />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
