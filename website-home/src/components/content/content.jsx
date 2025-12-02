@@ -20,6 +20,7 @@ import DigitalLogic from "../computers/digital-logic";
 import OperatingSystem from "../computers/operating-system";
 import ProgrammingAndDataStructures from "../computers/programming-and-data-structures";
 import TheoryOfComputation from "../computers/theory-of-computation";
+import Sorting from "../computers/algorithms/sorting";
 
 const Content = () => {
   return (
@@ -38,6 +39,7 @@ const Content = () => {
           {/* Algorithms */}
           <Route path="/computers/algorithms" element={<Algorithms />} />
           <Route path="/computers/algorithms/searching" element={<Searching />} />
+          <Route path="/computers/algorithms/sorting" element={<Sorting />} />
 
           {/* Compiler Design */}
           <Route path="/computers/compiler-design" element={<CompilerDesign />} />
