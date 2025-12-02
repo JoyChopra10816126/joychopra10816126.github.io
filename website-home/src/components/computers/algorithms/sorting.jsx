@@ -48,6 +48,34 @@ const Sorting = () => {
             </li>
           </ol>
         </li>
+        <li>
+          Insertion sort is another basic sorting algorithm
+          <ol>
+            <li>
+              We start with a sorted segment of 1 element.
+            </li>
+            <li>
+              Then we take the next unsorted element and insert it in
+              the correct position in the sorted segment
+            </li>
+            <li>
+              Then we repeat with the next unsorted element.
+            </li>
+            <li>
+              Insertion sort takes <MathTextInline>{"O(n^2)"}</MathTextInline> time
+            </li>
+            <li>
+              Insertion sort can be implemented both iteratively and recursively
+            </li>
+          </ol>
+        </li>
+        <li>
+          <MathTextInline>{"O(n^2)"}</MathTextInline> sorting algorithms are
+          infeasible for n greater than 10000
+        </li>
+        <li>
+          Experimentally, insertion sort is faster than selection sort.
+        </li>
       </ol>
       <b>Selection sort pseudocode</b>
       <CodeView
@@ -76,6 +104,29 @@ function swap(A, index1, index2) {
   temp = A[index2]
   A[index2] = A[index1]
   A[index1] = temp
+}
+          `
+        }
+      />
+      <br/>
+      <b>Insertion sort pseudocode</b>
+      <CodeView
+        wrapLines
+        lineNumbers
+        highlight={javascriptHighlight}
+        content={
+          `// Array A of length n
+function insertion_sort(A, n) {
+  for(index = 1; index < n; index++) {
+    // In each iteration, A[0] to A[index - 1] is a sorted segment
+
+    next_index = index
+    // Insert new element in its correct position in the sorted segment
+    while(next_index > 0 && A[next_index] < A[next_index - 1] ) {
+      swap(A, next_index, next_index - 1)
+      next_index = next_index - 1
+    }
+  }
 }
           `
         }

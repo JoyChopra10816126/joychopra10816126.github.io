@@ -31,7 +31,7 @@ const Algorithms = () => {
           },
           {
             name: "Sorting",
-            // description: "Ordering data quickly",
+            description: "Arranging elements of a sequence",
             url: "/computers/algorithms/sorting"
           },
           {
