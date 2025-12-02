@@ -19,6 +19,7 @@ import Databases from "../computers/databases";
 import DigitalLogic from "../computers/digital-logic";
 import OperatingSystem from "../computers/operating-system";
 import ProgrammingAndDataStructures from "../computers/programming-and-data-structures";
+import TheoryOfComputation from "../computers/theory-of-computation";
 
 const Content = () => {
   return (
@@ -61,6 +62,11 @@ const Content = () => {
           {/* Programming & Data Structures */}
           <Route path="/computers/programming-and-data-structures"
            element={<ProgrammingAndDataStructures />} 
+           />
+
+          {/* Theory of Computation */}
+          <Route path="/computers/theory-of-computation"
+           element={<TheoryOfComputation />} 
            />
 
           {/* Default */}
