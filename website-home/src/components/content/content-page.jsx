@@ -1,5 +1,5 @@
 import { Container, Header } from "@cloudscape-design/components";
-import ModeSelector from "../mode-selector/mode-selector";
+// import ModeSelector from "../mode-selector/mode-selector";
 import { isBasicMode, useMode, isAdvancedMode, isExamplesMode } from "../mode-selector/mode-context";
 
 const ContentPage = ({
@@ -27,7 +27,7 @@ const ContentPage = ({
         header={
           <Header
             variant="h2"
-            actions={<ModeSelector />}
+            // actions={<ModeSelector />}
           >
             {title}
           </Header>
