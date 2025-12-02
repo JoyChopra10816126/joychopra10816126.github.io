@@ -25,13 +25,20 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
   </script>
 
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4WS48TKMQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-C4WS48TKMQ');
+  </script>
+  <script>
+    const redirect = sessionStorage.redirect;
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      window.history.replaceState(null, null, redirect);
+    }
   </script>
 </head>
 
