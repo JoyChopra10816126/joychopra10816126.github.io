@@ -18,6 +18,7 @@ import ComputerOrganisationAndArchitecture from "../computers/computer-organizat
 import Databases from "../computers/databases";
 import DigitalLogic from "../computers/digital-logic";
 import OperatingSystem from "../computers/operating-system";
+import ProgrammingAndDataStructures from "../computers/programming-and-data-structures";
 
 const Content = () => {
   return (
@@ -56,6 +57,11 @@ const Content = () => {
 
           {/* Operating System */}
           <Route path="/computers/operating-system" element={<OperatingSystem />} />
+
+          {/* Programming & Data Structures */}
+          <Route path="/computers/programming-and-data-structures"
+           element={<ProgrammingAndDataStructures />} 
+           />
 
           {/* Default */}
           <Route path="*" element={<NotFound />} />
